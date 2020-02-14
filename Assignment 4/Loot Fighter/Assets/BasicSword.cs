@@ -9,7 +9,7 @@ using UnityEngine;
 public class BasicSword : Sword
 {
     public string description = "A simple sword";
-    public float baseDamage = 1;
+    public float baseDamage = 0;
 
     public string GetDescription()
     {

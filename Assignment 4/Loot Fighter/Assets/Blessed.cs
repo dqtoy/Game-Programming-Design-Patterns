@@ -1,24 +1,24 @@
 ﻿/*****************************
  * Connor Wolf
- * Sharpened.cs
+ * Blessed.cs
  * Assignment 4
- * Sharpened Enchantment
+ * Blessed Enchantment
  *****************************/
 using UnityEngine;
 
-public class Sharpened : EnchantmentDecorator
+public class Blessed : EnchantmentDecorator
 {
-    public Sharpened(Sword sword) : base(sword)
+    public Blessed(Sword sword) : base(sword)
     {
     }
 
     public override float GetDamage()
     {
-        return tempSword.GetDamage() + 3;
+        return tempSword.GetDamage() + 5;
     }
 
     public override string GetDescription()
     {
-        return tempSword.GetDescription() + ", sharpened";
+        return tempSword.GetDescription() + ", blessed";
     }
 }

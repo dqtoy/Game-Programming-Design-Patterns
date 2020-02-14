@@ -1,24 +1,24 @@
 ﻿/*****************************
  * Connor Wolf
- * Sharpened.cs
+ * Chipped.cs
  * Assignment 4
- * Sharpened Enchantment
+ * Chipped Enchantment
  *****************************/
 using UnityEngine;
 
-public class Sharpened : EnchantmentDecorator
+public class Chipped : EnchantmentDecorator
 {
-    public Sharpened(Sword sword) : base(sword)
+    public Chipped(Sword sword) : base(sword)
     {
     }
 
     public override float GetDamage()
     {
-        return tempSword.GetDamage() + 3;
+        return tempSword.GetDamage() - 1;
     }
 
     public override string GetDescription()
     {
-        return tempSword.GetDescription() + ", sharpened";
+        return tempSword.GetDescription() + ", chipped";
     }
 }

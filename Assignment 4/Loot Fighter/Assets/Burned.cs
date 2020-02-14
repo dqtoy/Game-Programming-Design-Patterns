@@ -1,24 +1,24 @@
 ﻿/*****************************
  * Connor Wolf
- * Sharpened.cs
+ * Burned.cs
  * Assignment 4
- * Sharpened Enchantment
+ * Burning Enchantment
  *****************************/
 using UnityEngine;
 
-public class Sharpened : EnchantmentDecorator
+public class Burned : EnchantmentDecorator
 {
-    public Sharpened(Sword sword) : base(sword)
+    public Burned(Sword sword) : base(sword)
     {
     }
 
     public override float GetDamage()
     {
-        return tempSword.GetDamage() + 3;
+        return tempSword.GetDamage() + 2;
     }
 
     public override string GetDescription()
     {
-        return tempSword.GetDescription() + ", sharpened";
+        return tempSword.GetDescription() + ", blazing";
     }
 }

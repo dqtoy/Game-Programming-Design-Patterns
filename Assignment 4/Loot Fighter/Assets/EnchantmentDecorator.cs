@@ -4,8 +4,6 @@
  * Assignment 4
  * Controls decoration of swords
  *****************************/
-using UnityEngine;
-
 public abstract class EnchantmentDecorator : Sword
 {
     protected Sword tempSword;
