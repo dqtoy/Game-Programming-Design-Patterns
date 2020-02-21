@@ -60,7 +60,16 @@ public abstract class Ball : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Box"))
         {
-            canHit = false;
+            if (canHit == true)
+            {
+                canHit = false;
+                BattingPractice.instance.CallStrike();
+                Debug.Log("Strike");
+            } else
+            {
+                BattingPractice.instance.CallHit();
+                Debug.Log("Hit");
+            }
         }
     }
 }
