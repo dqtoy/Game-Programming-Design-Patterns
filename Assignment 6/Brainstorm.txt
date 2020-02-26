@@ -1,0 +1,38 @@
+Player is a mage casting spells to heal people.
+
+People can be:
+Burned, Frozen, Electrified, or Stinky
+
+These ailments are cured by:
+Water, Fire, Earth, and Air
+
+See how many people you can make happy.
+
+Some people are extra inflicted, causing them to have two or more symptoms.
+
+Deal with the symptoms in the order they are listed.
+
+ie. "Stinky, Burned, Farmer" ~> "Air, Water"
+
+Sometimes, monsters will sneak in.
+
+You can tell if a monster is around because its conditions will be misspelled.
+
+If a monster appears, use your attacks to defeat it! Hit it with the number of symptoms it is pretending to have!
+
+
+Factory Application:
+SpellFactory
+DamageFactory is a SpellFactory
+HealFactory is an SpellFactory
+
+SpellFactory, HealFactory, and DamageFactory use Spells
+
+1, 2, 3, and 4 create melee attacks that hurt monsters.
+
+Q, W, E, and R create spell attacks that heal people.
+
+Hurting a person will give you a strike.
+Healing a monster will give you a strike.
+
+Three strikes and you're out.
