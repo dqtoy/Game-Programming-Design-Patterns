@@ -6,7 +6,22 @@ public class DamageFactory : SpellFactory
 {
     public override void NewSpell(string element)
     {
-        settingSpell = new DamageSpell(element, 1);
+        switch (element)
+        {
+            case ("Fire"):
+                settingSpell = new DamageSpell("Fire", 1);
+                break;
+            case ("Water"):
+                settingSpell = new DamageSpell("Water", 1);
+                break;
+            case ("Earth"):
+                settingSpell = new DamageSpell("Earth", 1);
+                break;
+            case ("Air"):
+                settingSpell = new DamageSpell("Air", 1);
+                break;
+
+        }
         spellQueue.Enqueue(settingSpell);
     }
 }

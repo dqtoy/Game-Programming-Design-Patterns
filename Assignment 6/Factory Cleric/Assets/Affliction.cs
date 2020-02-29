@@ -42,8 +42,8 @@ public class Affliction
                 if (damage == 1) { return "Burred"; }
                 else return "Burned";
             case "Earth":
-                if (damage == 1) { return "ParaIized"; }
-                else return "Paralyzed";
+                if (damage == 1) { return "Shoked"; }
+                else return "Shocked";
             case "Air":
                 if (damage == 1) { return "Saoked"; }
                 else return "Soaked";

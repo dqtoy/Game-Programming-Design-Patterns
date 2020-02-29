@@ -28,6 +28,7 @@ public abstract class SpellFactory
     public string GetSpells()
     {
         string returnString = "";
+        if (spellQueue.Count == 0) return returnString;
         Spell[] tempSpells = spellQueue.ToArray();
         for (int i = 0; i != tempSpells.Length; i++)
         {
