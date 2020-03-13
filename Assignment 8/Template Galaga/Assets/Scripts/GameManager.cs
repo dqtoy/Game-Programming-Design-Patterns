@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,15 +18,14 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
+        }
+
         if (gameRunning)
         {
             numberOfShips = Object.FindObjectsOfType<AbstractShip>().Length;
@@ -34,13 +34,13 @@ public class GameManager : MonoBehaviour
 
         if (numberOfShips == 0)
         {
-            shipsLeft.text = "You win!";
+            shipsLeft.text = "You win! Press R to play again.";
         }
     }
 
     public void Lose()
     {
         gameRunning = false;
-        shipsLeft.text = "You lose...";
+        shipsLeft.text = "You lose... Press R to try again.";
     }
 }

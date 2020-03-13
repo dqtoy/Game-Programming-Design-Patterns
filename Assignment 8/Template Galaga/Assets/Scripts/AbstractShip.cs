@@ -30,7 +30,15 @@ public abstract class AbstractShip : MonoBehaviour
 
     public void TemplateDrop()
     {
-        transform.Translate(PrimitiveDirection() * PrimitiveSpeed());
+        Vector2 direction = PrimitiveDirection();
+        float speed = PrimitiveSpeed();
+
+        ActivateDrop(direction, speed);
+    }
+
+    private void ActivateDrop(Vector2 dir, float speed)
+    {
+        transform.Translate(dir * speed);
     }
 
     protected abstract float PrimitiveSpeed();
